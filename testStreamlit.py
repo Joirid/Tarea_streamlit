@@ -75,3 +75,6 @@ if uploaded_file is not None and uploaded_file.name == 'vendedores.xlsx':
         st.write("**Región**")
         st.write(f"{vendor_df['REGION'].values[0]}")
         st.metric("**Porcentaje de ventas**", f"{vendor_df[columns_graphics[2]].values[0]:.2%}")
+elif uploaded_file is not None:
+    st.warning("Por favor, sube el archivo 'vendedores.xlsx' para continuar.")
+    
