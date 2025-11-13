@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import openpyxl as opxl
 
 st.title("Testeando Streamlit")
 # Subir el archivo de vendedores
